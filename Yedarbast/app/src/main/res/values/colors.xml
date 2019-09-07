@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dfa948</color>
+    <color name="colorPrimaryDark">#dfa948</color>
+    <color name="colorAccent">#dfa948</color>
+    <color name="arrow_color">#000</color>
+
+    <color name="zard">#dfa948</color>
+    <color name="khakestari">#212121</color>
+    <color name="noghrei">#8c8c8c</color>
+    <color name="black">#000</color>
+    <color name="green_color">#019e3a</color>
+
+</resources>

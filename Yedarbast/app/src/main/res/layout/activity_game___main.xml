@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X O"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="56sp"
+        android:textColor="@color/zard"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="24dp"
+        />
+    <Button
+        android:id="@+id/twoplayer"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="دو نفره"
+        android:textSize="40sp"
+        android:onClick="playTwoPGame"
+        android:background="#000"
+        android:textColor="#C00000"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/singleplayer"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="یکنفره"
+        android:textSize="40sp"
+        android:onClick="playSinglePGame"
+        android:background="@color/khakestari"
+        android:textColor="@color/zard"
+        android:padding="10dp"/>
+
+</LinearLayout>

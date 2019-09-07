@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActiveActivity"
+    android:background="@color/black"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/active_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/time_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کد 5 رقمی به شماره همراه زیر ارسال شده است. لطفا در کادر زیر وارد نمایید"
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/zard"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:backgroundTint="#fff"/>
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:backgroundTint="#fff"/>
+            <EditText
+                android:id="@+id/num3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:backgroundTint="#fff"/>
+            <EditText
+                android:id="@+id/num4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:backgroundTint="#fff"/>
+            <EditText
+                android:id="@+id/num5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/zard"
+                android:backgroundTint="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:onClick="AgainSendCode">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دریافت مجدد کد"
+            android:textSize="18sp"
+            android:textColor="@color/zard"
+            android:layout_marginRight="20dp" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ویرایش شماره همراه"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#0066ff"/>-->
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/noghre"
+        android:textColor="@color/zard"
+        android:layout_margin="30dp"
+        android:text="ارسال کد"
+        android:onClick="send_code"/>
+
+</LinearLayout>

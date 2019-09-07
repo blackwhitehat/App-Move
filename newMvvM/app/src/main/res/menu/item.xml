@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_setting"
+            android:orderInCategory="100"
+            android:title="Setting"
+            android:icon="@drawable/ic_more_vert_black_24dp"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="خانه" />
+        <item
+            android:id="@+id/nav_sabad"
+
+            android:title="سبدخرید" />
+        <item
+            android:id="@+id/nav_slideshow"
+
+            android:title="پیشنهاد ویژه" />
+        <item
+            android:id="@+id/nav_tools"
+
+            android:title="تنظیمات" />
+
+
+        <item android:title="دسته ها">
+            <menu>
+                <item
+
+
+                    android:title=" " />
+            </menu>
+            <item
+
+
+                android:title=" " />
+            <item
+                android:id="@+id/nav_goshi"
+
+                android:title="گوشی" />
+            <item
+                android:id="@+id/nav_laptop"
+
+                android:title="لپ تاپ" />
+            <item
+                android:id="@+id/nav_modem"
+
+                android:title="مودم" />
+            <item
+                android:id="@+id/nav_mouse"
+
+                android:title="ماوس" />
+            <item
+                android:id="@+id/nav_headset"
+
+                android:title="هدست" />
+            <item
+                android:id="@+id/nav_monitor"
+
+                android:title="مانیتور" />
+
+        </item>
+    </group>
+
+</menu>

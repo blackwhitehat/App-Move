@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegisterRulsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3.01"
+            android:src="@drawable/rules"/>
+
+        <View
+            android:id="@+id/cn"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/zard"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="قوانین و شرایط را می پذیرم"
+            android:textColor="@color/zard"
+            android:padding="20dp"
+            android:textSize="20dp"
+            android:id="@+id/Rulls"
+            android:background="@color/khakestari"
+            android:layout_gravity="center"
+            android:onClick="rullcheck"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

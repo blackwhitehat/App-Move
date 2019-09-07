@@ -1,0 +1,95 @@
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/app_bar" android:id="@+id/app_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="4dp"
+                app:autoPlay="true"
+                app:snap="false"
+                app:pageTransformer="depth"
+                app:animateOnBoundary="true"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"/>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="3dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/colorAccent">
+                    <TextView
+                        android:id="@+id/main_all"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#B33C3C"
+                        android:minLines="1"
+                        android:maxLines="1"
+                        android:gravity="left|center"
+                        android:text="Hamısına baxın"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:drawableLeft="@drawable/ic_arrow_left"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:paddingRight="10dp"
+                        android:gravity="right|center"
+                        android:text="Ən son Filmlər"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
